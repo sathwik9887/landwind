@@ -66,18 +66,19 @@ const Hello = () => {
       </div>
 
       {isNavOpen && (
-        <div className="fixed top-0 right-0 w-full h-full text-black bg-white px-4">
-          <div className="flex justify-start items-center">
+        <div className="fixed  top-0 right-0 w-full h-full text-black bg-white  px-4 py-4">
+          <div className="flex justify-start items-center ">
             <img src={Logo} alt="Logo" className="w-6 lg:w-8 md:w-7" />
             <div className="ml-4 text-lg font-semibold">Landwind</div>
           </div>
+
           <button
             onClick={handleToggle}
             className="absolute top-5 right-4 p-0 text-3xl"
           >
             {isNavOpen ? <LuX size={25} /> : <LuMenu size={25} />}
           </button>
-          <ul className="flex flex-col items-center p-5 space-y-6 mt-5 text-base font-semibold">
+          <ul className="flex flex-col items-center  space-y-6 mt-5 text-base font-semibold">
             {menuItems.map((menu, index) => (
               <li
                 key={index}
